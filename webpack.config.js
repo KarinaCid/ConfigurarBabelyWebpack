@@ -1,8 +1,9 @@
 const path = require("path");
 const webpack = require("webpack");
 const webpack_rules = [];
+
 const webpackOption = {
-    entry: "./js/main.js",
+    entry: "./js/check.js",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",

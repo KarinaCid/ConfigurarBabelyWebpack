@@ -1,10 +1,11 @@
-module.exports= {
-    test: /\.js$/,
-    exclude: /(node_modules|bower_components)/,
-        use: {
-            loader: "babel-loader",
+{
+    test: /\.js$/;
+        exclude: /(node_modules|bower_components)/;//excluded node_modules
+            use: {
+        loader: "babel-loader";
             options: {
-                presets: ["@babel/preset-env"]
-            }
+            presets: ["@babel/preset-env"] //Preset used for env setup
         }
+    }
+
 }
